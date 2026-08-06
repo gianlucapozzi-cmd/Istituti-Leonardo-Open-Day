@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="it" className={`${poppins.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans text-text">
+      <body className="flex min-h-full w-full min-w-0 flex-col font-sans text-text">
         {children}
         {/* TODO: Meta Pixel / Google Ads — inserire snippet base qui */}
       </body>

@@ -3,7 +3,7 @@
 type Props = {
   children: React.ReactNode;
   className?: string;
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "blue";
 };
 
 export function ScrollToFormButton({
@@ -17,7 +17,9 @@ export function ScrollToFormButton({
   const styles =
     variant === "primary"
       ? "bg-brand-red text-white shadow-md hover:bg-[#c41c23] focus-visible:ring-brand-red"
-      : "border-2 border-white text-white hover:bg-white/10 focus-visible:ring-white";
+      : variant === "blue"
+        ? "bg-brand-blue text-white shadow-md hover:bg-[#1a4a7a] focus-visible:ring-brand-blue"
+        : "border-2 border-white text-white hover:bg-white/10 focus-visible:ring-white";
 
   return (
     <a href="#registrazione" className={`${base} ${styles} ${className}`}>

@@ -37,7 +37,7 @@ export function WhyLeonardo() {
         >
           Perché scegliere Istituti Leonardo
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-base text-white/85 sm:text-lg">
+        <p className="mx-auto mt-3 max-w-5xl text-center text-base text-white/85 sm:whitespace-nowrap sm:text-lg">
           Quello che ci rende diversi lo vedrai di persona, ma ecco cosa
           troverai da noi:
         </p>

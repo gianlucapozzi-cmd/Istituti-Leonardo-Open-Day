@@ -110,7 +110,7 @@ export function Footer() {
         alt="Istituti Leonardo Milano"
         width={56}
         height={56}
-        className="mx-auto rounded-full bg-white/95 p-1"
+        className="mx-auto object-contain"
       />
       <p className="mt-4 text-sm text-white/85">
         © YES Group S.r.l. | Istituti Leonardo Milano

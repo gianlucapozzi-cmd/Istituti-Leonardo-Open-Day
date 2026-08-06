@@ -7,16 +7,27 @@ const LOGO_URL =
 export function Hero() {
   return (
     <section
-      className="relative overflow-hidden bg-gradient-to-br from-brand-blue via-[#1a4a7a] to-brand-red"
+      className="relative overflow-hidden bg-brand-blue"
       aria-labelledby="hero-title"
     >
-      {/* Overlay per leggibilità */}
+      {/* Ragazzi in ambito scolastico, in trasparenza */}
+      <Image
+        src="/hero/students.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[center_30%] opacity-45"
+        aria-hidden
+      />
+
+      {/* Overlay blu leggero — niente rosso/bordeaux in apertura */}
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.12),_transparent_55%)]"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-blue/75 via-[#1a4a7a]/65 to-brand-blue/80"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-0 bg-black/25"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20"
         aria-hidden
       />
 
@@ -24,10 +35,10 @@ export function Hero() {
         <Image
           src={LOGO_URL}
           alt="Istituti Leonardo Milano"
-          width={72}
-          height={72}
+          width={148}
+          height={148}
           priority
-          className="mb-8 rounded-full bg-white/95 p-1.5 shadow-lg"
+          className="mb-6 h-[8.05rem] w-[8.05rem] object-contain sm:h-[9.2rem] sm:w-[9.2rem] lg:mb-8"
         />
 
         <h1
@@ -43,7 +54,7 @@ export function Hero() {
         </p>
 
         <div
-          className="mt-8 rounded-2xl bg-brand-red px-5 py-3 text-sm font-semibold tracking-wide shadow-lg sm:text-base"
+          className="mt-8 max-w-full rounded-2xl bg-white/15 px-4 py-3 text-center text-sm font-semibold tracking-wide shadow-lg ring-1 ring-white/40 backdrop-blur-sm sm:px-5 sm:text-base"
           role="status"
         >
           SABATO 12 SETTEMBRE · dalle 10:00 alle 17:00
