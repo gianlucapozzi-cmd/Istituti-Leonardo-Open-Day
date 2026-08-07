@@ -266,7 +266,7 @@ export function RegistrationForm() {
           </div>
 
           {status === "error" && (
-            <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-brand-red" role="alert">
+            <p className="rounded-xl bg-[#e8f0f8] px-4 py-3 text-sm text-brand-red" role="alert">
               Si è verificato un errore. Riprova tra poco.
             </p>
           )}
@@ -274,7 +274,7 @@ export function RegistrationForm() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="w-full rounded-xl bg-brand-red px-6 py-3.5 text-base font-semibold text-white shadow-md transition hover:bg-[#c41c23] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-red focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
+            className="w-full rounded-xl bg-brand-red px-6 py-3.5 text-base font-semibold text-white shadow-md transition hover:bg-[#1a4a7a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-red focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
           >
             {status === "submitting" ? "Invio in corso…" : "Registrati ora"}
           </button>

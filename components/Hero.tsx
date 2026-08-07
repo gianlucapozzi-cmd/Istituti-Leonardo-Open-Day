@@ -23,7 +23,7 @@ export function Hero() {
 
       {/* Overlay blu leggero — niente rosso/bordeaux in apertura */}
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-blue/75 via-[#1a4a7a]/65 to-brand-blue/80"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-blue/75 via-[#c41c23]/65 to-brand-blue/80"
         aria-hidden
       />
       <div
