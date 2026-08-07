@@ -22,6 +22,10 @@ const strengths = [
     title: "Ambiente accogliente",
     description: "Uno spazio sereno dove ritrovare fiducia e motivazione",
   },
+  {
+    title: "Piattaforma e-learning",
+    description: "Videolezioni a supporto degli studenti H24",
+  },
 ];
 
 export function WhyLeonardo() {

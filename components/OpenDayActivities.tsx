@@ -4,6 +4,7 @@ import {
   Users,
   MessageCircle,
   Coffee,
+  BadgePercent,
   type LucideIcon,
 } from "lucide-react";
 
@@ -32,6 +33,11 @@ const activities: { icon: LucideIcon; title: string; description: string }[] = [
     icon: Coffee,
     title: "Snack offerti",
     description: "Un momento di convivialità in tutta tranquillità",
+  },
+  {
+    icon: BadgePercent,
+    title: "Sconti su nuove iscrizioni",
+    description: "Prezzi promo riservati in occasione dell'Open Day",
   },
 ];
 
