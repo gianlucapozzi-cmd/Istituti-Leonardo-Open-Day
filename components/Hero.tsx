@@ -1,8 +1,6 @@
-import Image from "next/image";
+import { BrandLogo } from "./BrandLogo";
 import { ScrollToFormButton } from "./ScrollToFormButton";
-
-const LOGO_URL =
-  "https://www.recuperoanniscolasticiamilano.it/wp-content/uploads/2024/08/Logo-Leonardo-100x100-2.png";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -30,13 +28,10 @@ export function Hero() {
       />
 
       <div className="relative mx-auto flex min-h-[88vh] max-w-3xl flex-col items-center justify-center px-5 py-16 text-center text-white sm:px-8">
-        <Image
-          src={LOGO_URL}
-          alt="Istituti Leonardo Milano"
-          width={148}
-          height={148}
+        <BrandLogo
+          size={148}
           priority
-          className="mb-5 h-[8.05rem] w-[8.05rem] object-contain sm:h-[9.2rem] sm:w-[9.2rem]"
+          className="mb-5 h-[8.05rem] w-[8.05rem] sm:h-[9.2rem] sm:w-[9.2rem]"
         />
 
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/90 sm:text-base">

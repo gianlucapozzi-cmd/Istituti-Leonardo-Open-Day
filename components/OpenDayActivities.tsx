@@ -7,6 +7,7 @@ import {
   BadgePercent,
   type LucideIcon,
 } from "lucide-react";
+import { BrandLogo } from "./BrandLogo";
 
 const activities: { icon: LucideIcon; title: string; description: string }[] = [
   {
@@ -48,6 +49,7 @@ export function OpenDayActivities() {
       aria-labelledby="openday-title"
     >
       <div className="mx-auto max-w-5xl">
+        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="openday-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"

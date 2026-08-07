@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { BrandLogo } from "./BrandLogo";
 
 const reviews = [
   {
@@ -48,6 +49,7 @@ export function Reviews() {
       aria-labelledby="reviews-title"
     >
       <div className="mx-auto max-w-5xl">
+        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="reviews-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"

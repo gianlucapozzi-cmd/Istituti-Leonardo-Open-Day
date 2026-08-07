@@ -1,9 +1,6 @@
-import Image from "next/image";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
+import { BrandLogo } from "./BrandLogo";
 import { ScrollToFormButton } from "./ScrollToFormButton";
-
-const LOGO_URL =
-  "https://www.recuperoanniscolasticiamilano.it/wp-content/uploads/2024/08/Logo-Leonardo-100x100-2.png";
 
 export function PracticalInfo() {
   return (
@@ -12,6 +9,7 @@ export function PracticalInfo() {
       aria-labelledby="info-title"
     >
       <div className="mx-auto max-w-3xl">
+        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="info-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
@@ -80,7 +78,6 @@ export function PracticalInfo() {
           </li>
         </ul>
 
-        {/* Mini mappa embed */}
         <div className="mt-10 overflow-hidden rounded-2xl shadow-md">
           <iframe
             title="Mappa Istituti Leonardo — Via Marco Aurelio 8, Milano"
@@ -105,13 +102,7 @@ export function PracticalInfo() {
 export function Footer() {
   return (
     <footer className="bg-brand-blue px-5 py-10 text-center text-white sm:px-8">
-      <Image
-        src={LOGO_URL}
-        alt="Istituti Leonardo Milano"
-        width={56}
-        height={56}
-        className="mx-auto object-contain"
-      />
+      <BrandLogo size={64} className="mx-auto h-14 w-14" />
       <p className="mt-4 text-sm text-white/85">
         © YES Group S.r.l. | Istituti Leonardo Milano
       </p>

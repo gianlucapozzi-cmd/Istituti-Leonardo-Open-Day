@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { BrandLogo } from "./BrandLogo";
 import { ScrollToFormButton } from "./ScrollToFormButton";
 
 const strengths = [
@@ -35,6 +36,7 @@ export function WhyLeonardo() {
       aria-labelledby="why-title"
     >
       <div className="mx-auto max-w-5xl">
+        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="why-title"
           className="text-center text-2xl font-bold sm:text-3xl"

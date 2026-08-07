@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { BrandLogo } from "./BrandLogo";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -105,6 +106,7 @@ export function RegistrationForm() {
         aria-live="polite"
       >
         <div className="mx-auto max-w-lg rounded-2xl bg-white p-8 text-center shadow-md">
+          <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16" />
           <p className="text-lg font-semibold text-brand-blue">
             Grazie! La tua registrazione è confermata. Ti aspettiamo sabato 12
             settembre.
@@ -121,6 +123,7 @@ export function RegistrationForm() {
       aria-labelledby="form-title"
     >
       <div className="mx-auto max-w-lg">
+        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="form-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
@@ -274,7 +277,7 @@ export function RegistrationForm() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="w-full rounded-xl bg-brand-red px-6 py-3.5 text-base font-semibold text-white shadow-md transition hover:bg-[#1a4a7a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-red focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
+            className="w-full rounded-xl bg-brand-blue px-6 py-3.5 text-base font-semibold text-white shadow-md transition hover:bg-[#c41c23] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
           >
             {status === "submitting" ? "Invio in corso…" : "Registrati ora"}
           </button>
