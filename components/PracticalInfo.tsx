@@ -14,9 +14,9 @@ export function PracticalInfo() {
       <div className="mx-auto max-w-3xl">
         <h2
           id="info-title"
-          className="text-center text-2xl font-bold text-text sm:text-3xl"
+          className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
         >
-          Info pratiche
+          Info Open Day
         </h2>
 
         <ul className="mt-10 space-y-6">
@@ -41,7 +41,7 @@ export function PracticalInfo() {
             <div>
               <p className="font-semibold text-text">Quando</p>
               <p className="mt-1 text-text/75">
-                Sabato 12 settembre, dalle 10:00 alle 17:00
+                Open Day · Sabato 12 settembre, dalle 10:00 alle 17:00
               </p>
             </div>
           </li>

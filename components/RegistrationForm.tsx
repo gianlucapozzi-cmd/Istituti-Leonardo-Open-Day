@@ -123,14 +123,14 @@ export function RegistrationForm() {
       <div className="mx-auto max-w-lg">
         <h2
           id="form-title"
-          className="text-center text-2xl font-bold text-text sm:text-3xl"
+          className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
         >
           Registrati all&apos;Open Day
         </h2>
         <p className="mt-4 text-center text-sm leading-relaxed text-text/75 sm:text-base">
-          La registrazione è consigliata per partecipare. Non ti verrà chiesto
-          nulla all&apos;ingresso, ma prenotarti ci aiuta a organizzarci e a
-          riservarti l&apos;accoglienza migliore.
+          Prenota il tuo posto all&apos;Open Day di sabato 12 settembre. Non ti
+          verrà chiesto nulla all&apos;ingresso, ma registrarti ci aiuta a
+          organizzarci e a riservarti l&apos;accoglienza migliore.
         </p>
 
         <form

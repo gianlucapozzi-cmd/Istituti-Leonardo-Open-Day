@@ -37,9 +37,8 @@ export function WhyLeonardo() {
         >
           Perché scegliere Istituti Leonardo
         </h2>
-        <p className="mx-auto mt-3 max-w-5xl text-center text-base text-white/85 sm:whitespace-nowrap sm:text-lg">
-          Quello che ci rende diversi lo vedrai di persona, ma ecco cosa
-          troverai da noi:
+        <p className="mx-auto mt-3 max-w-5xl text-center text-base text-white/85 sm:text-lg">
+          All&apos;Open Day lo vedrai di persona: ecco cosa troverai da noi.
         </p>
 
         <ul className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">

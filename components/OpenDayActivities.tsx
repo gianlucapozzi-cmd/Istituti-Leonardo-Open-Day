@@ -44,12 +44,13 @@ export function OpenDayActivities() {
       <div className="mx-auto max-w-5xl">
         <h2
           id="openday-title"
-          className="text-center text-2xl font-bold text-text sm:text-3xl"
+          className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
         >
           Cosa potrai fare all&apos;Open Day
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-base text-text/75 sm:text-lg">
-          Nessun programma rigido: una giornata aperta per conoscerci con calma.
+          Una giornata aperta per conoscere la scuola senza impegno: visita,
+          percorsi, docenti e un momento insieme.
         </p>
 
         <ul className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

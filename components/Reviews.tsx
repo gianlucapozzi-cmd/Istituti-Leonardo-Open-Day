@@ -50,7 +50,7 @@ export function Reviews() {
       <div className="mx-auto max-w-5xl">
         <h2
           id="reviews-title"
-          className="text-center text-2xl font-bold text-text sm:text-3xl"
+          className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
         >
           Cosa dicono di noi
         </h2>

@@ -10,7 +10,6 @@ export function Hero() {
       className="relative overflow-hidden bg-brand-blue"
       aria-labelledby="hero-title"
     >
-      {/* Ragazzi in ambito scolastico, in trasparenza */}
       <Image
         src="/hero/students.jpg"
         alt=""
@@ -21,7 +20,6 @@ export function Hero() {
         aria-hidden
       />
 
-      {/* Overlay blu leggero — niente rosso/bordeaux in apertura */}
       <div
         className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-blue/75 via-[#c41c23]/65 to-brand-blue/80"
         aria-hidden
@@ -38,19 +36,23 @@ export function Hero() {
           width={148}
           height={148}
           priority
-          className="mb-6 h-[8.05rem] w-[8.05rem] object-contain sm:h-[9.2rem] sm:w-[9.2rem] lg:mb-8"
+          className="mb-5 h-[8.05rem] w-[8.05rem] object-contain sm:h-[9.2rem] sm:w-[9.2rem]"
         />
+
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/90 sm:text-base">
+          Istituti Leonardo Milano
+        </p>
 
         <h1
           id="hero-title"
-          className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl"
+          className="mt-3 text-4xl font-bold leading-none tracking-tight sm:text-5xl md:text-6xl"
         >
-          Vuoi recuperare i tuoi anni scolastici?
+          Open Day
         </h1>
 
         <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
-          Vieni a scoprirci di persona. Sabato 12 settembre ti aspettiamo per
-          farti conoscere la scuola, i percorsi e chi rende tutto possibile.
+          Vuoi recuperare i tuoi anni scolastici? Vieni a scoprirci di persona:
+          ti mostriamo la scuola, i percorsi e chi ti seguirà passo dopo passo.
         </p>
 
         <div
