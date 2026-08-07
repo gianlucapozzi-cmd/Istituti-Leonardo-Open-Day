@@ -9,7 +9,6 @@ export function PracticalInfo() {
       aria-labelledby="info-title"
     >
       <div className="mx-auto max-w-3xl">
-        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="info-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"

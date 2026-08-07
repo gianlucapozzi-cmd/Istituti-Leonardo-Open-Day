@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { BrandLogo } from "./BrandLogo";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -102,11 +101,10 @@ export function RegistrationForm() {
     return (
       <section
         id="registrazione"
-        className="scroll-mt-6 bg-muted px-5 py-16 sm:px-8 sm:py-20"
+        className="scroll-mt-6 bg-muted px-5 pb-16 pt-8 sm:px-8 sm:pb-20 sm:pt-10"
         aria-live="polite"
       >
         <div className="mx-auto max-w-lg rounded-2xl bg-white p-8 text-center shadow-md">
-          <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16" />
           <p className="text-lg font-semibold text-brand-blue">
             Grazie! La tua registrazione è confermata. Ti aspettiamo sabato 12
             settembre.
@@ -119,18 +117,17 @@ export function RegistrationForm() {
   return (
     <section
       id="registrazione"
-      className="scroll-mt-6 bg-muted px-5 py-16 sm:px-8 sm:py-20"
+      className="scroll-mt-6 bg-muted px-5 pb-16 pt-8 sm:px-8 sm:pb-20 sm:pt-10"
       aria-labelledby="form-title"
     >
       <div className="mx-auto max-w-lg">
-        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="form-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
         >
           Registrati all&apos;Open Day
         </h2>
-        <p className="mt-4 text-center text-sm leading-relaxed text-text/75 sm:text-base">
+        <p className="mt-3 text-center text-sm leading-relaxed text-text/75 sm:text-base">
           Prenota il tuo posto all&apos;Open Day di sabato 12 settembre. Non ti
           verrà chiesto nulla all&apos;ingresso, ma registrarti ci aiuta a
           organizzarci e a riservarti l&apos;accoglienza migliore.

@@ -1,5 +1,4 @@
 import { Star } from "lucide-react";
-import { BrandLogo } from "./BrandLogo";
 
 const reviews = [
   {
@@ -9,22 +8,22 @@ const reviews = [
     role: "Genitore",
   },
   {
-    title: "Accolti, compresi e finalmente sereni",
-    text: "Dopo due esperienze scolastiche negative, Istituti Leonardo ci ha accolti e compresi. Nostro figlio ha superato l'anno eccellentemente.",
-    author: "Annamaria Cardillo",
+    title: "Da insuccessi scolastici a quattro anni superati al liceo",
+    text: "Mio figlio era convinto di non valere. Ora ha superato quattro anni. Grazie allo staff per aver ridato fiducia e autostima.",
+    author: "Rossella Creco",
     role: "Genitore",
   },
   {
-    title: "Dal sogno al diploma dopo 30 anni",
-    text: "Ho terminato gli studi dopo 30 anni. Mi sono diplomato con ottimi voti lavorando e avendo famiglia.",
-    author: "Marco Santaniello",
-    role: "Studente adulto",
+    title: "Una seconda possibilità che diventa successo",
+    text: "Dopo due scuole statali negative, mio figlio ha recuperato due anni in un ambiente sereno e propositivo. Ha riacquistato fiducia.",
+    author: "Francesca Pomati",
+    role: "Genitore",
   },
   {
-    title: "Serietà, organizzazione e attenzione ai risultati",
-    text: "Dopo un anno siamo molto soddisfatti. Personale, direttore e struttura seri e ben organizzati.",
-    author: "Carlo Antonelli",
-    role: "Genitore",
+    title: "Umanità, attenzione e disponibilità totale",
+    text: "Mi sono affidata a questa realtà. Tutti si sono messi a disposizione anche in orari impossibili. Mi preparo per la maturità.",
+    author: "Simona Sareni",
+    role: "Studentessa adulta",
   },
 ];
 
@@ -45,11 +44,10 @@ function Stars() {
 export function Reviews() {
   return (
     <section
-      className="bg-muted px-5 py-16 sm:px-8 sm:py-20"
+      className="bg-muted px-5 pb-8 pt-16 sm:px-8 sm:pb-10 sm:pt-20"
       aria-labelledby="reviews-title"
     >
       <div className="mx-auto max-w-5xl">
-        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="reviews-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
@@ -87,12 +85,12 @@ export function Reviews() {
         <p className="mt-10 text-center text-sm text-text/60">
           Altre testimonianze su{" "}
           <a
-            href="https://www.recuperoanniscolasticiamilano.it/"
+            href="https://www.istitutileonardomilano.it/"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-brand-blue underline-offset-2 hover:underline"
           >
-            recuperoanniscolasticiamilano.it
+            istitutileonardomilano.it
           </a>
         </p>
       </div>

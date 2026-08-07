@@ -7,7 +7,6 @@ import {
   BadgePercent,
   type LucideIcon,
 } from "lucide-react";
-import { BrandLogo } from "./BrandLogo";
 
 const activities: { icon: LucideIcon; title: string; description: string }[] = [
   {
@@ -45,23 +44,22 @@ const activities: { icon: LucideIcon; title: string; description: string }[] = [
 export function OpenDayActivities() {
   return (
     <section
-      className="bg-white px-5 py-16 sm:px-8 sm:py-20"
+      className="bg-white px-5 pb-16 pt-10 sm:px-8 sm:pb-20 sm:pt-12"
       aria-labelledby="openday-title"
     >
       <div className="mx-auto max-w-5xl">
-        <BrandLogo size={72} className="mx-auto mb-4 h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]" />
         <h2
           id="openday-title"
           className="text-center text-2xl font-bold text-brand-blue sm:text-3xl"
         >
           Cosa potrai fare all&apos;Open Day
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-base text-text/75 sm:text-lg">
+        <p className="mx-auto mt-2 max-w-2xl text-center text-base text-text/75 sm:text-lg">
           Una giornata aperta per conoscere la scuola senza impegno: visita,
           percorsi, docenti e un momento insieme.
         </p>
 
-        <ul className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {activities.map(({ icon: Icon, title, description }) => (
             <li
               key={title}

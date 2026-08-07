@@ -36,7 +36,7 @@ export function StickyCta() {
           alt=""
           width={32}
           height={32}
-          className="h-8 w-8 rounded-full bg-white object-contain p-0.5"
+          className="h-8 w-8 object-contain"
           aria-hidden
         />
         Registrati all&apos;Open Day
