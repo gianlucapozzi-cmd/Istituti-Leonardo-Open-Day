@@ -63,7 +63,10 @@ export function WhyLeonardo() {
         </ul>
 
         <div className="mt-12 flex justify-center">
-          <ScrollToFormButton className="w-full max-w-xs sm:w-auto">
+          <ScrollToFormButton
+            variant="blue"
+            className="w-full max-w-xs sm:w-auto"
+          >
             Registrati all&apos;Open Day
           </ScrollToFormButton>
         </div>
