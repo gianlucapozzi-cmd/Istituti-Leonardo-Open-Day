@@ -27,7 +27,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto flex min-h-[88vh] max-w-3xl flex-col items-center justify-center px-5 py-12 text-center text-white sm:px-8 sm:py-14">
+      <div className="relative mx-auto flex min-h-[70vh] max-w-3xl flex-col items-center justify-center px-5 py-10 text-center text-white sm:min-h-[88vh] sm:px-8 sm:py-14">
         <BrandLogo
           size={148}
           priority
