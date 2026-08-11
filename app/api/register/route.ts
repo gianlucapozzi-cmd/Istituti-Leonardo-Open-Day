@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
+const WEBHOOK_URL =
+  process.env.OPENDAY_WEBHOOK_URL ??
+  "https://automations.wolfoncloud.com/webhook/f1a53e83-01ba-4609-8ab1-1122437200b9";
+
 type Payload = {
   nome?: string;
   cognome?: string;
@@ -33,15 +37,38 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 
-  // TODO: collegare invio form — CRM / Formspree / webhook / email
-  // Esempio: await fetch(process.env.WEBHOOK_URL!, { method: "POST", body: JSON.stringify({...}) })
-  console.info("[Open Day lead]", {
+  const lead = {
     nome: nome.trim(),
     cognome: cognome.trim(),
     email: email.trim(),
     telefono: telefono.trim(),
-    note: note?.trim() || null,
-  });
+    note: note?.trim() || "",
+    source: "open-day-landing",
+    evento: "Open Day 12 settembre",
+  };
+
+  try {
+    const webhookRes = await fetch(WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(lead),
+    });
+
+    if (!webhookRes.ok) {
+      const detail = await webhookRes.text().catch(() => "");
+      console.error("[Open Day webhook error]", webhookRes.status, detail);
+      return NextResponse.json(
+        { error: "Webhook failed" },
+        { status: 502 },
+      );
+    }
+  } catch (error) {
+    console.error("[Open Day webhook error]", error);
+    return NextResponse.json(
+      { error: "Webhook unreachable" },
+      { status: 502 },
+    );
+  }
 
   return NextResponse.json({ ok: true });
 }
