@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Missing fields" }, { status: 400 });
   }
 
-  const params = new URLSearchParams({
+  const lead = {
     nome: nome.trim(),
     cognome: cognome.trim(),
     email: email.trim(),
@@ -45,12 +45,13 @@ export async function POST(req: NextRequest) {
     note: note?.trim() || "",
     source: "open-day-landing",
     evento: "Open Day 12 settembre",
-  });
+  };
 
   try {
-    // Il webhook Wolfoncloud è registrato solo per GET
-    const webhookRes = await fetch(`${WEBHOOK_URL}?${params.toString()}`, {
-      method: "GET",
+    const webhookRes = await fetch(WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(lead),
     });
 
     if (!webhookRes.ok) {
