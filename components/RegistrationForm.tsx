@@ -1,9 +1,9 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { useRouter } from "next/navigation";
+import { ThankYouMessage } from "./ThankYouMessage";
 
-type FormState = "idle" | "submitting" | "error";
+type FormState = "idle" | "submitting" | "success" | "error";
 
 type FormData = {
   nome: string;
@@ -28,7 +28,6 @@ function isValidEmail(email: string) {
 }
 
 export function RegistrationForm() {
-  const router = useRouter();
   const [data, setData] = useState<FormData>(initial);
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>(
     {},
@@ -75,7 +74,8 @@ export function RegistrationForm() {
       // window.fbq?.("track", "Lead");
       // window.gtag?.("event", "conversion", { ... });
 
-      router.push("/grazie");
+      setStatus("success");
+      setData(initial);
     } catch {
       setStatus("error");
     }
@@ -97,6 +97,20 @@ export function RegistrationForm() {
 
   const inputClass =
     "w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-text shadow-sm outline-none transition placeholder:text-text/40 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20";
+
+  if (status === "success") {
+    return (
+      <section
+        id="registrazione"
+        className="scroll-mt-6 bg-muted px-5 pb-16 pt-8 sm:px-8 sm:pb-20 sm:pt-10"
+        aria-live="polite"
+      >
+        <div className="mx-auto max-w-lg">
+          <ThankYouMessage />
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section

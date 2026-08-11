@@ -6,6 +6,12 @@ type Props = {
   variant?: "primary" | "outline" | "blue";
 };
 
+function scrollToForm() {
+  document
+    .getElementById("registrazione")
+    ?.scrollIntoView({ behavior: "smooth" });
+}
+
 export function ScrollToFormButton({
   children,
   className = "",
@@ -22,8 +28,12 @@ export function ScrollToFormButton({
         : "border-2 border-white text-white hover:bg-white/10 focus-visible:ring-white";
 
   return (
-    <a href="#registrazione" className={`${base} ${styles} ${className}`}>
+    <button
+      type="button"
+      onClick={scrollToForm}
+      className={`${base} ${styles} ${className}`}
+    >
       {children}
-    </a>
+    </button>
   );
 }

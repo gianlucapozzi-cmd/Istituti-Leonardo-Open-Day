@@ -27,8 +27,13 @@ export function StickyCta() {
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-black/5 bg-white/95 p-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] backdrop-blur md:hidden">
-      <a
-        href="#registrazione"
+      <button
+        type="button"
+        onClick={() => {
+          document
+            .getElementById("registrazione")
+            ?.scrollIntoView({ behavior: "smooth" });
+        }}
         className="flex w-full items-center justify-center gap-3 rounded-xl bg-brand-blue px-4 py-3 text-base font-semibold text-white shadow-md transition hover:bg-[#c41c23] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
       >
         <Image
@@ -40,7 +45,7 @@ export function StickyCta() {
           aria-hidden
         />
         Registrati all&apos;Open Day
-      </a>
+      </button>
     </div>
   );
 }
