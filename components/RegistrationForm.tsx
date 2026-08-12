@@ -71,10 +71,7 @@ export function RegistrationForm() {
 
       if (!res.ok) throw new Error("Submit failed");
 
-      // TODO: tracking — Meta Pixel Lead / Google Ads CompleteRegistration
-      // window.fbq?.("track", "Lead");
-      // window.gtag?.("event", "conversion", { ... });
-
+      window.fbq?.("track", "Lead");
       router.push("/grazie");
     } catch {
       setStatus("error");
